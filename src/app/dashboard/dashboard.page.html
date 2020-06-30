@@ -1,0 +1,50 @@
+<ion-content>
+	<div class="header container">
+		<h2>COV19D</h2>
+		<p>Live information about COVID-19</p>
+	</div>
+	<ion-card mode="ios" class="dataDunia">
+	  <ion-card-content>
+	  	<ion-card-subtitle class="animate__animated animate__fadeIn">{{datas?.country}}</ion-card-subtitle>
+	   <ion-grid>
+	   	<ion-row>
+	   		<ion-col>
+	   			<ion-chip color="primary">
+		          <ion-label>Cases: <b><span countUp="{{datas?.cases}}" class="animate__animated animate__fadeIn">0</span></b></ion-label>
+		        </ion-chip>
+	   		</ion-col>
+	   		<ion-col>
+	   			<ion-chip color="success">
+		          <ion-label>Recovered: <b><span countUp="{{datas?.recovered}}" class="animate__animated animate__fadeIn">0</span></b></ion-label>
+		        </ion-chip>
+	   		</ion-col>
+	   	</ion-row>
+	   	<ion-row>
+	   		<ion-col>
+		        <ion-chip color="danger">
+		          <ion-label>Deaths: <b><span countUp="{{datas?.deaths}}" class="animate__animated animate__fadeIn">0</span></b></ion-label>
+		        </ion-chip>
+	   		</ion-col>
+	   	</ion-row>
+	   </ion-grid>
+	  </ion-card-content>
+	</ion-card>
+	<ion-card mode="ios" class="tips animate__animated animate__fadeIn">
+		<ion-card-content>
+			<!-- <ion-card-subtitle>Protect Your Self!</ion-card-subtitle> -->
+			<ion-list lines="none">
+				<ion-item class="ion-no-padding ion-text-nowrap" button (click)="presentModal()" detail>
+				  <ion-avatar slot="start">
+				    <img src="../../assets/illustration/doctor.png">
+				  </ion-avatar>
+				  <ion-label>How to protect your self?</ion-label>
+				</ion-item>
+			</ion-list>
+		</ion-card-content>
+	</ion-card>	
+</ion-content>
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+	<ion-fab-button mode="ios" [routerLink]="['/countries']">
+	  <ion-icon name="search-outline"></ion-icon>
+	</ion-fab-button>
+</ion-fab>

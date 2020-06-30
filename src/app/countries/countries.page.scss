@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@900&display=swap');
+
+.container {
+  width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+ion-header {
+	background: #8e7cec;
+	ion-toolbar {
+	    --background: #8e7cec;
+	    --border-color: #8e7cec;
+	    --color: white;
+
+	    ion-button {
+	    	--color: white;
+	    	button {
+	    		padding: 0;
+	    	}
+	    	// --icon-font-size: 20px;
+	    	// --icon-padding-start: 10px;
+	    }
+	}
+
+	ion-searchbar {
+        --background: white;
+    }
+}
+
+ion-content {
+    --background: #8e7cec;
+    h1, h4 {
+    	font-family: 'Muli';
+    }
+
+}
+.body {
+	background: white;
+	height: 100%;
+	bottom: 0;
+}

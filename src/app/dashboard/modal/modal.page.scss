@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@900&display=swap');
+
+.header {
+	background: #8e7cec;
+	color: white;
+	height: 200px;
+	position: relative;
+	text-align: left;
+	bottom: 0;
+	ion-button {
+		margin-top: 20px;
+		--color:white;
+	}
+}
+ion-content {
+	--background: white;
+}
+ion-card {
+	position: absolute;
+	margin-top: -100px;
+	ion-card-subtitle {
+		font-family: 'Muli';
+	}
+	p, li {
+		font-family: 'Montserrat';
+		font-size: 14px;
+	}
+}

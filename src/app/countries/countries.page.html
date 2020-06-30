@@ -1,0 +1,25 @@
+<ion-header mode="ios" class="ion-no-border ion-no-padding" collapse="condense">
+  <ion-toolbar  class="container" mode="ios">
+    <ion-button mode="ios" fill="clear" class="ion-no-padding" [routerLink]="['/dashboard']">
+    	<ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-button>
+    <ion-searchbar animated mode="ios" [(ngModel)]="term" autocomplete="off"> </ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let country of countries | filter:term">
+    <ion-item class="animate__animated animate__fadeIn">
+      <ion-label>
+        <h1>{{country.country}}</h1>
+        <p>
+        	Cases: {{country.cases | number}}<br>
+        	Recovered: {{country.recovered | number}}<br>
+        	Deaths: {{country.deaths | number}}<br>
+          Active: {{country.active | number}}<br>
+          Critical: {{country.deaths | number}}
+        </p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

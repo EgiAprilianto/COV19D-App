@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@900&display=swap');
+
+ion-content {
+	text-align: center;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+.header {
+	background: #8e7cec;
+	height: 200px;
+	position: relative;
+	text-align: left;
+	bottom: 0;
+	h2 {
+		font-family: 'Muli';
+		position: absolute;
+		color: white;
+	}
+	p {
+		position: absolute;
+		font-family: 'Montserrat';
+		margin-top: 50px;
+		color: white;
+	}
+}
+
+.dataDunia {
+	position: absolute;
+	margin-top: -100px;
+	ion-card {
+		width: 100%;
+	}
+	ion-card-subtitle {
+		font-family: 'Muli';
+	}
+	ion-row {
+		text-align: center;
+		ion-chip{
+			font-family: 'Montserrat';
+		}
+	}
+}
+.tips {
+	position: relative;
+	margin-top: 30%;
+	ion-card-content {
+		padding: 10px;
+	}
+	ion-avatar {
+		width: 70px;
+		height: 70px;
+	}
+	ion-label {
+		font-family: 'Montserrat';
+		font-size: 15px;
+		white-space: pre-wrap;
+	}
+}
+ion-fab-button {
+	--background: #8e7cec;
+	--background-hover: #6652d1;
+	--background-focused: #6652d1;
+	--background-activated: #6652d1;
+}

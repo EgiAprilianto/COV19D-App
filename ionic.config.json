@@ -1,0 +1,8 @@
+{
+  "name": "AwesomeApp",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
